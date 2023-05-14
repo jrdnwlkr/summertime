@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Server Side APIs Homework</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/9a095f6261.css" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <div class="container text-center">
 
-        <div class="row py-3">
+        <header class="row py-3">
             <div class="col-6">
-              <h1>WeathrCheckr</h1>
+              <h1><i class="fa-solid fa-sun"></i> WeathrCheckr</h1>
             </div>
-            <div class="col-6 bg-light">
-              Navigation
+            <div class="col-6 py-3">
+              <a href="">About</a>
             </div>
-          </div>
+        </header>
 
         <div class="row mb-4">
             <div class="col-12 bg-primary p-4">
@@ -26,39 +27,65 @@
             </div>
         </div>
 
-        <div class="row mb-4">
-            <div class="col-4 bg-primary p-4">
-            </div>
-            <div class="col-8 bg-info">
+        <div id="info-block" class="border-bottom row mb-4">
+            <div class="col-7 p-4">
                 <h1>Palm Springs</h1>
                 <p>California</p>
+                <p>Palm Springs (Cahuilla: Séc-he)[5][6] is a desert resort city in Riverside County, California, United States, within the Colorado Desert's Coachella Valley. The city covers approximately 94 square miles (240 km2), making it the largest city in Riverside County by land area. With multiple plots in checkerboard pattern, more than 10% of the city is part of the Agua Caliente Band of Cahuilla Indians reservation land and is the administrative capital of the most populated reservation in California.</p>
+                <button type="button" class="btn"><i class="fa-solid fa-bookmark"></i> Bookmark</button>
+                <button type="button" class="btn"><i class="fa-solid fa-share"></i> Share</button>
+                <button type="button" class="btn"><i class="fa-solid fa-plane"></i> Check Tickets</button>
+            </div>
+            <div class="col-5 bg-primary" id="image-block">
+                <img class="image-fluid" src="https://cdn.vox-cdn.com/thumbor/m3aVnAs6HHr0cTBHZ0SOawjMJEk=/1400x1050/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19598300/Stewart_JEPHOTO_0001_35a.jpeg">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-2 bg-light py-2">
-                    <h5>Monday</h5>
-            </div>
-            <div class="col-2 bg-light py-2">
-                    <h5>Tuesday</h5>
-            </div>
-            <div class="col-2 bg-light py-2">
-                    <h5>Wednesday</h5>
-            </div>
-            <div class="col-2 bg-light py-2">
+            <div class="col-2 bg-light py-2 day">
+                <h4><i class="fa-solid fa-sun"></i></h4>
+                <h5>Thursday</h5>
+                <p>Sunny</p>
+                <p>Temp | Wind | Humidity</p>
+        </div>
+            <div class="col-2 bg-light py-2 day">
+                <h4><i class="fa-solid fa-sun"></i></h4>
+                <h5>Thursday</h5>
+                <p>Sunny</p>
+                <p>Temp | Wind | Humidity</p>
+        </div>
+            <div class="col-2 bg-light py-2 day">
+                <h4><i class="fa-solid fa-sun"></i></h4>
+                <h5>Thursday</h5>
+                <p>Sunny</p>
+                <p>Temp | Wind | Humidity</p>
+        </div>
+            <div class="col-2 bg-light py-2 day">
+                    <h4><i class="fa-solid fa-sun"></i></h4>
                     <h5>Thursday</h5>
+                    <p>Sunny</p>
+                    <p>Temp | Wind | Humidity</p>
             </div>
-            <div class="col-2 bg-light py-2">
-                    <h5>Friday</h5>
-            </div>
-            <div class="col-2 bg-warning py-2">
+            <div class="col-2 bg-light py-2 day">
+                <h4><i class="fa-solid fa-sun"></i></h4>
+                <h5>Thursday</h5>
+                <p>Sunny</p>
+                <p>Temp | Wind | Humidity</p>
+        </div>
+            <div class="col-2 bg-warning py-2 search-history">
                 <h5 class="border-bottom border-black pb-2">Check Again</h5>
-                <p>Palm Springs, CA</p>
-                <p>Minneapolis, MN</p>
+                <ul>
+                    <li>Palm Springs, CA</li>
+                    <li>Minneapolis, MN</li>
+                    <li>Savannah, GA</li>
+                    <li>San Antonio, TX</li>
+                </ul>
+
             </div>
         </div>
 
     </div> <!--Close container-->
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9a095f6261.js" crossorigin="anonymous"></script>
 </body>
 </html>

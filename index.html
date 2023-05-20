@@ -17,19 +17,22 @@
               <h1><i class="fa-solid fa-sun"></i> WeathrCheckr</h1>
             </div>
             <div class="col-6 py-3">
-              <a href="">About</a>
+                <button type="button" class="btn"><i class="fa-solid fa-info-circle"></i> About</button>
             </div>
         </header>
 
         <div class="row mb-4">
-            <div class="col-12 bg-primary p-4">
-                <input class="form-control form-control-lg" type="text" placeholder="Check Weathr" aria-label=".form-control-lg example">
+            <div class="col-10 bg-primary p-4">
+                <input id="searchInput" class="form-control form-control-lg" type="text" placeholder="Check Weathr" aria-label=".form-control-lg example">
+            </div>
+            <div class="col-2 bg-primary p-4">
+                <button id="searchButton" class="btn btn-lg bg-warning"><i class="fa-solid fa-search"></i> Search</button>
             </div>
         </div>
 
         <div id="info-block" class="border-bottom row mb-4">
             <div class="col-7 p-4">
-                <h1>Palm Springs</h1>
+                <h2>Palm Springs</h2>
                 <p>California</p>
                 <p>Palm Springs (Cahuilla: Séc-he)[5][6] is a desert resort city in Riverside County, California, United States, within the Colorado Desert's Coachella Valley. The city covers approximately 94 square miles (240 km2), making it the largest city in Riverside County by land area. With multiple plots in checkerboard pattern, more than 10% of the city is part of the Agua Caliente Band of Cahuilla Indians reservation land and is the administrative capital of the most populated reservation in California.</p>
                 <button type="button" class="btn"><i class="fa-solid fa-bookmark"></i> Bookmark</button>
@@ -85,6 +88,8 @@
         </div>
 
     </div> <!--Close container-->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/9a095f6261.js" crossorigin="anonymous"></script>
 </body>

@@ -4,7 +4,7 @@ header {
 
 a {
     text-decoration: none;
-    color: black;
+    color: goldenrod;
 }
 
 a:hover {
@@ -13,6 +13,7 @@ a:hover {
 
 h1 {
     text-align: left;
+    margin-top: 8px;
 }
 
 h1 i {
@@ -48,16 +49,38 @@ img {
     padding-bottom: 0;
 }
 
-
 .btn {
     border: none;
     border-bottom: 2px solid white;
+    color: rgb(255, 193, 7);
+    background-color: lightgoldenrod;
+    display: inline-block;
 }
 
 .btn:hover {
     margin-bottom: 0;
-    background-color: #74e8ff;
-    border-bottom: 2px solid teal;
+    background-color: rgb(255, 193, 7);
+    border-bottom: 2px solid goldenrod;
+    color: darkgoldenrod;
+}
+
+.btn:active {
+    margin-bottom: 0;
+    background-color: blue;
+    border-bottom: 2px solid goldenrod;
+    color: darkgoldenrod;
+}
+
+.btn-lg {
+    width: 100%;
+    color: darkgoldenrod;
+    border-bottom: none;
+}
+
+.btn-lg:hover {
+    width: 100%;
+    color: rgb(115, 85, 8);
+    border-bottom: none;
 }
 
 #image-block {

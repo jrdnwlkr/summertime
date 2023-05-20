@@ -1,3 +1,8 @@
+var dayOfWeek = dayjs().day();
+var searchButton = document.getElementById('searchButton');
+console.log(searchButton);
+
+
 function getAPI() {
     var requestURL = 'http://api.openweathermap.org/geo/1.0/direct?q=London&limit=5&appid=59b1fac7db283fe209a8d74c1390402d';
 
@@ -18,9 +23,13 @@ function getHistory() {
     return localStorage.getItem("city")
 }
 
-function myFunction() {
-    var city = document.getElementById(myInput).value;
+searchButton.addEventListener("click", myFunction);
 
-    localStorage.setItem("")
+function myFunction() {
+    var searchInput = document.getElementById('searchInput').value;
+    console.log(searchInput);
+    localStorage.setItem("City", searchInput)
 }
+
+
 

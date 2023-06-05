@@ -20,6 +20,11 @@ h1 i {
     color: rgb(255, 193, 7);
 }
 
+h3 {
+    font-weight: 400;
+    font-size: .25rem;
+}
+
 .day h4 {
     font-size: 3rem;
 }
